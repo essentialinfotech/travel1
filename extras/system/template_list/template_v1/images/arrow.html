@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en">    
+<!-- Mirrored from www.swt.travel/extras/system/template_list/template_v1/images/arrow.png by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 04:13:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>        <meta charset="UTF-8">        <meta http-equiv="X-UA-Compatible" content="IE=edge">        <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->        <meta id="id" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />        <meta name="keywords" content=" Welcome To  SWT TRAVELFlights, Hotels, Busses, Packages, Low Cost Flights">        <meta name="description" content="Flight Bookings, Hotel Bookings, Bus Bookings, Package bookings system.">        <meta name="author" content="travelomatix">        <link rel="shortcut icon" href="../../../../custom/TMX1512291534825461/images/favicon/favicon.ico" type="image/x-icon">        <link rel="icon" href="../../../../custom/TMX1512291534825461/images/favicon/favicon.ico" type="image/x-icon">        <title> Welcome To  SWT TRAVEL</title>        <link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&amp;display=swap" rel="stylesheet">        <!-- <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">        <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro" rel="stylesheet"> -->        <script src="../../../library/javascript/jquery-2.1.1.min.js"></script><link  href="../../../library/bootstrap/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" hreflang="en"></link><link  href="../../../library/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" hreflang="en"></link><link  href="../../template_v3/css/theme_style.css" media="screen" rel="stylesheet" type="text/css" hreflang="en"></link><link  href="../css/shared.css" media="screen" rel="stylesheet" type="text/css" hreflang="en"></link><link  href="../../../library/javascript/jquery-ui-1.11.2.custom/jquery-ui.theme.min.css" rel="stylesheet" type="text/css" hreflang="en"></link><link  href="../../../library/datetimepicker/jquery.datetimepicker.css" rel="stylesheet" type="text/css" hreflang="en"></link><link  href="../../../library/javascript/jquery-ui-1.11.2.custom/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" hreflang="en"></link><link  href="../../template_v3/css/front_end.css" media="screen" rel="stylesheet" type="text/css" hreflang="en"></link>        <!-- Custom CSS -->        <link href="../../template_v3/css/media.css"	rel="stylesheet" />        <script>            var app_base_url = "../../../../../index.html";
+            var tmpl_img_url = '../../template_v3/images/index.html';
+
+            var _lazy_content;
+        </script>    </head>    <body class="index_page">        <div id="show_log" class="modal fade" role="dialog">            <div class="modal-dialog">                <!-- Modal content-->                <div class="modal-content">                    <!-- <div class="modal-header">                    
+                    </div> -->                    <div class="modal-body">                        <div class="my_account_dropdown mysign exploreul">    <button type="button" class="close log_close" data-dismiss="modal">&times;</button><div class="signdiv"><div class="insigndiv for_sign_in"><div class="leftpul"><span class="hide"><input type="hidden" id="pri_fb_app_id" value="466980408589509"></span><script>function statusChangeCallback(response) {
+    if (response.status === 'connected') {
+        updateCallback(true)
+    } else {
+        updateCallback(false)
+    }
+}
+
+function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+        statusChangeCallback(response)
+    })
+}
+window.fbAsyncInit = function() {
+    FB.init({
+        appId: document.getElementById('pri_fb_app_id').value,
+        cookie: true,
+        xfbml: true,
+        version: 'v2.0'
+    });
+    FB.getLoginStatus(function(response) {
+        statusChangeCallback(response)
+    })
+};
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = '../../../../../../connect.facebook.net/en_US/sdk.js';
+    fjs.parentNode.insertBefore(js, fjs)
+}(document, 'script', 'facebook-jssdk'));
+
+function updateCallback(post) {
+    FB.api('/me?fields=id,name,email', function(response) {
+        var req = '';
+        if (post == true) {
+            req = response;
+            $.post(app_base_url + 'index.php/auth/social_network_login_auth/facebook', req, function(result) {
+                if (result && result.status) {
+                    login_into_app()
+                }
+            })
+        }
+    })
+}
+
+function login_into_app() {
+    $('.my_account_dropdown').hide();
+    location.reload()
+}
+
+function fb_login() {
+    FB.login(function(response) {
+        if (response.authResponse) {
+            access_token = response.authResponse.accessToken;
+            user_id = response.authResponse.userID;
+            FB.api('/me?fields=id,name,email', function(response) {
+                $.post(app_base_url + 'index.php/auth/social_network_login_auth/facebook', response, function(result) {
+                    if (result && result.status) {
+                        login_into_app()
+                    }
+                })
+            })
+        }
+    }, {
+        scope: 'publish_actions,email'
+    })
+}</script><a href="#" onclick="fb_login()" class="logspecify facecolor"
+	id="fb_login"><div class="mensionsoc">Login with Facebook</div></a><div id="g-signin-btn" class="g_id_signin hide" data-onsuccess="onSignIn" data-type="CredentialResponse">sdasrwe</div><div class="g_id_signin " data-width="242"  data-height="42" data-longtitle="true" data-type="CredentialResponse" data-onsuccess="onSignIn">asdadsadfs</div></div><div class="ritpul"><form role="form" id="login" action="#" autocomplete="off"
+					name="login"><div class="rowput"> <span class="fa fa-user"></span><input type="email"
+							data-content="Username Ex: john@gmail.com"
+							data-trigger="hover focus" data-placement="bottom"
+							data-original-title="Here To Help" data-toggle="popover"
+							data-container="body" id="email"
+							class="email form-control logpadding" placeholder="Username"
+							required="required" name="email"></div><div class="rowput"> <span class="fa fa-lock"></span><input type="password"
+							id="password" class="password form-control logpadding"
+							placeholder="Password" required="required" name="password"
+							value="" ></div><div class="clearfix"></div><div id="login-status-wrapper" class="alert alert-danger"
+						style="display: none"><p> <i class="fa fa-warning"></i> </p></div><div class="clearfix"></div><div id="login_auth_loading_image" style="display: none"><div class="text-center loader-image"><img src="../../template_v3/images/loader_v3.gif" alt="please wait"/></div></div><div class="clearfix"></div><div class="misclog"> <a class="hand-cursor forgtpsw forgot_pasword" id="forgot-password">Forgot Password ? </a> </div><div class="clearfix"></div><button class="submitlogin" id="login_submit">Login</button><div class="clear"></div><div class="dntacnt"> New User? <a class="hand-cursor open_register">Sign Up</a> </div></form></div></div><div class="newacount_div for_sign_up"><div class="slpophd_new">Register with SWT Travel</div><div class="othesend_regstr"><div class="ritpul"><form autocomplete="off" method="post" id="register_user_form"><div class="rowput has-feedback"><span class="fa fa-user"></span><input type="text" required="required" class="validate_user_register form-control logpadding" placeholder="First Name" name="first_name" required="" /></div><div class="rowput has-feedback"><span class="fa fa-user"></span><input type="text" required="required" class="validate_user_register form-control logpadding" placeholder="Last Name" name="last_name" required="" /></div><div class="rowput has-feedback"><span class="fa fa-envelope"></span><input type="email" class="validate_user_register form-control logpadding" placeholder="Email-Id" value="" name="email" required="" /><span class="err_msg"> Email Field is mandatory</span></div><div class="rowput has-feedback"><span class="fa fa-mobile"></span><select name="country_code" class="validate_user_register form-control logpadding" required="">  <option value = '' >select country code</option>                              <option value = '+355'>+355 Albania</option><option value = '+213'>+213 Algeria</option><option value = '+1684'>+1684 American Samoa</option><option value = '+376'>+376 Andorra</option><option value = '+244'>+244 Angola</option><option value = '+1264'>+1264 Anguilla</option><option value = '+1268'>+1268 Antigua And Barbuda</option><option value = '+54'>+54 Argentina</option><option value = '+374'>+374 Armenia</option><option value = '+297'>+297 Aruba</option><option value = '+61'>+61 Australia</option><option value = '+43'>+43 Austria</option><option value = '+994'>+994 Azerbaijan</option><option value = '+1242'>+1242 Bahamas</option><option value = '+973'>+973 Bahrain</option><option value = '+880'>+880 Bangladesh</option><option value = '+1246'>+1246 Barbados</option><option value = '+375'>+375 Belarus</option><option value = '+32'>+32 Belgium</option><option value = '+501'>+501 Belize</option><option value = '+229'>+229 Benin</option><option value = '+1441'>+1441 Bermuda</option><option value = '+975'>+975 Bhutan</option><option value = '+591'>+591 Bolivia</option><option value = '+387'>+387 Bosnia And Herzegovina</option><option value = '+267'>+267 Botswana</option><option value = '+55'>+55 Brazil</option><option value = '+673'>+673 Brunei Darussalam</option><option value = '+359'>+359 Bulgaria</option><option value = '+226'>+226 Burkina Faso</option><option value = '+257'>+257 Burundi</option><option value = '+855'>+855 Cambodia</option><option value = '+237'>+237 Cameroon</option><option value = '+1'>+1 Canada</option><option value = '+238'>+238 Cape Verde</option><option value = '+1345'>+1345 Cayman Islands</option><option value = '+236'>+236 Central African Republic</option><option value = '+235'>+235 Chad</option><option value = '+56'>+56 Chile</option><option value = '+86'>+86 China</option><option value = '+61'>+61 Christmas Island</option><option value = '+891'>+891 Cocos (Keeling) Islands</option><option value = '+57'>+57 Colombia</option><option value = '+269'>+269 Comoros</option><option value = '+242'>+242 Congo</option><option value = '+243'>+243 Congo, DR Of The</option><option value = '+682'>+682 Cook Islands</option><option value = '+506'>+506 Costa Rica</option><option value = '0'>0 </option><option value = '+385'>+385 Croatia</option><option value = '+357'>+357 Cyprus</option><option value = '+420'>+420 Czech Republic</option><option value = '+45'>+45 Denmark</option><option value = '+253'>+253 Djibouti</option><option value = '+1767'>+1767 Dominica</option><option value = '+1809'>+1809 Dominican Republic</option><option value = '+593'>+593 Ecuador</option><option value = '+20'>+20 Egypt</option><option value = '+503'>+503 El Salvador</option><option value = '+240'>+240 Equatorial Guinea</option><option value = '+291'>+291 Eritrea</option><option value = '+372'>+372 Estonia</option><option value = '+251'>+251 Ethiopia</option><option value = '+500'>+500 Falkland Islands</option><option value = '+298'>+298 Faroe Islands</option><option value = '+679'>+679 Fiji</option><option value = '+358'>+358 Finland</option><option value = '+33'>+33 France</option><option value = '+594'>+594 French Guiana</option><option value = '+689'>+689 French Polynesia</option><option value = '+241'>+241 Gabon</option><option value = '+220'>+220 Gambia</option><option value = '+995'>+995 Georgia</option><option value = '+49'>+49 Germany</option><option value = '+233'>+233 Ghana</option><option value = '+350'>+350 Gibralter</option><option value = '+30'>+30 Greece</option><option value = '+299'>+299 Greenland</option><option value = '+1473'>+1473 Grenada</option><option value = '+590'>+590 Guadeloupe</option><option value = '+1671'>+1671 Guam</option><option value = '+502'>+502 Guatemala</option><option value = '+224'>+224 Guinea</option><option value = '+245'>+245 Guinea-Bissau</option><option value = '+592'>+592 Guyana</option><option value = '+509'>+509 Haiti</option><option value = '+504'>+504 Honduras</option><option value = '+852'>+852 Hong Kong</option><option value = '+36'>+36 Hungary</option><option value = '+354'>+354 Iceland</option><option value = '+91'>+91 India</option><option value = '+62'>+62 Indonesia</option><option value = '+353'>+353 Ireland</option><option value = '+972'>+972 Israel</option><option value = '+39'>+39 Italy</option><option value = '+1876'>+1876 Jamaica</option><option value = '+81'>+81 Japan</option><option value = '+962'>+962 Jordan</option><option value = '+7'>+7 Kazakhstan</option><option value = '+254'>+254 Kenya</option><option value = '+686'>+686 Kiribati</option><option value = '+850'>+850 Korea, DPR Of</option><option value = '+82'>+82 Korea, Republic Of</option><option value = '+965'>+965 Kuwait</option><option value = '+996'>+996 Kyrgyzstan</option><option value = '+856'>+856 Laos</option><option value = '+371'>+371 Latvia</option><option value = '+961'>+961 Lebanon</option><option value = '+266'>+266 Lesotho</option><option value = '+218'>+218 Libyan Arab Jamahiriya</option><option value = '+423'>+423 Liechtenstein</option><option value = '+370'>+370 Lithuania</option><option value = '+352'>+352 Luxembourg</option><option value = '+853'>+853 Macao</option><option value = '+389'>+389 Macedonia, FYR Of</option><option value = '+261'>+261 Madagascar</option><option value = '+265'>+265 Malawi</option><option value = '+60'>+60 Malaysia</option><option value = '+960'>+960 Maldives</option><option value = '+223'>+223 Mali</option><option value = '+356'>+356 Malta</option><option value = '+692'>+692 Marshall Islands</option><option value = '+596'>+596 Martinique</option><option value = '+222'>+222 Mauritania</option><option value = '+230'>+230 Mauritius</option><option value = '+262'>+262 Mayotte</option><option value = '+52'>+52 Mexico</option><option value = '+691'>+691 Micronesia, FS Of</option><option value = '+373'>+373 Moldova, Republic Of</option><option value = '+377'>+377 Monaco</option><option value = '+976'>+976 Mongolia</option><option value = '+382'>+382 Montenegro</option><option value = '+1664'>+1664 Montserrat</option><option value = '+212'>+212 Morocco</option><option value = '+258'>+258 Mozambique</option><option value = '+95'>+95 Myanmar</option><option value = '+264'>+264 Namibia</option><option value = '+674'>+674 Nauru</option><option value = '+977'>+977 Nepal</option><option value = '+31'>+31 Netherlands</option><option value = '+687'>+687 New Caledonia</option><option value = '+64'>+64 New Zealand</option><option value = '+505'>+505 Nicaragua</option><option value = '+227'>+227 Niger</option><option value = '+234'>+234 Nigeria</option><option value = '+683'>+683 Niue</option><option value = '+672'>+672 Norfolk Island</option><option value = '+1670'>+1670 Northern Mariana Islands</option><option value = '+47'>+47 Norway</option><option value = '+968'>+968 Oman</option><option value = '+92'>+92 Pakistan</option><option value = '+680'>+680 Palau</option><option value = '+507'>+507 Panama</option><option value = '+675'>+675 Papua New Guinea</option><option value = '+595 '>+595  Paragua</option><option value = '+595'>+595 Paraguay</option><option value = '+51'>+51 Peru</option><option value = '+63'>+63 Philippines</option><option value = '+870'>+870 Pitcairn</option><option value = '+48'>+48 Polan</option><option value = '+48'>+48 Poland</option><option value = '+351'>+351 Portugal</option><option value = '+1787'>+1787 Puerto Rico</option><option value = '+974'>+974 Qatar</option><option value = '+262 '>+262  Reunion</option><option value = '+40'>+40 Romania</option><option value = '+7'>+7 Russian Federation</option><option value = '+250'>+250 Rwanda</option><option value = '+590'>+590 Saint Barthelemy</option><option value = '+1869'>+1869 Saint Kitts And Nevis</option><option value = '+1758'>+1758 Saint Lucia</option><option value = '+1599'>+1599 Saint Martin</option><option value = '+685'>+685 Samoa</option><option value = '+378'>+378 San Marino</option><option value = '+239'>+239 Sao Tome And Principe</option><option value = '+966'>+966 Saudi Arabia</option><option value = '+221'>+221 Senegal</option><option value = '+381'>+381 Serbia</option><option value = '+248'>+248 Seychelles</option><option value = '+232'>+232 Sierra Leone</option><option value = '+65'>+65 Singapore</option><option value = '+421 '>+421  Slovakia (Slovak Republic)</option><option value = '+386'>+386 Slovenia</option><option value = '+677'>+677 Solomon Islands</option><option value = '+27'>+27 South Africa</option><option value = '+34'>+34 Spain</option><option value = '+94'>+94 Sri Lanka</option><option value = '+1784'>+1784 St Vincent And The Grenadines</option><option value = '+290'>+290 St. Helena</option><option value = '+508'>+508 St. Pierre And Miquelon</option><option value = '+249'>+249 Sudan</option><option value = '+597'>+597 Suriname</option><option value = '+47 '>+47  Svalbard And Jan Mayen Islands</option><option value = '+268'>+268 Swaziland</option><option value = '+46'>+46 Sweden</option><option value = '+41'>+41 Switzerland</option><option value = '+886'>+886 Taiwan</option><option value = '+992'>+992 Tajikistan</option><option value = '+255'>+255 Tanzania</option><option value = '+66'>+66 Thailand</option><option value = '+228'>+228 Togo</option><option value = '+676'>+676 Tonga</option><option value = '+1868'>+1868 Trinidad And Tobago</option><option value = '+216'>+216 Tunisia</option><option value = '+90'>+90 Turkey</option><option value = '+993'>+993 Turkmenistan</option><option value = '+1649'>+1649 Turks And Caicos Islands</option><option value = '+688'>+688 Tuvalu</option><option value = '+256'>+256 Uganda</option><option value = '+380'>+380 Ukraine</option><option value = '+971'>+971 United Arab Emirates</option><option value = '+44'>+44 United Kingdom</option><option value = '+1'>+1 United States</option><option value = '+598'>+598 Uruguay</option><option value = '+1 '>+1  US Minor Outlying Islands</option><option value = '+998'>+998 Uzbekistan</option><option value = '+678'>+678 Vanuatu</option><option value = '+379'>+379 Vatican City State</option><option value = '+58'>+58 Venezuela</option><option value = '+84'>+84 Viet Nam</option><option value = '+1284'>+1284 Virgin Islands - British</option><option value = '+1340'>+1340 Virgin Islands - U.S.</option><option value = '+681'>+681 Wallis And Futuna Islands</option><option value = '+967'>+967 Yemen</option><option value = '+260'>+260 Zambia</option><option value = '+263'>+263 Zimbabwe</option><option value = '+93'>+93 Afghanistan</option><option value = '+381'>+381 Yugoslavia</option>                            </select>                            <span class="err_msg"> country code Field is mandatory</span></div>    <div class="rowput has-feedback"><span class="fa fa-phone"></span><input type="phone" class="validate_user_register numeric form-control logpadding" maxlength="10" placeholder="Mobile Number" value="" name="phone" required="" /><span class="err_msg"> phone Field is mandatory</span></div><div class="rowput has-feedback"><span class="fa fa-lock"></span><input type="password" class="validate_user_register form-control logpadding" placeholder="New Password" value="" name="password" required=""><span class="err_msg"> password Field is mandatory</span></div><div class="rowput has-feedback"><span class="fa fa-lock"></span><input type="password" class="validate_user_register form-control logpadding" placeholder="Retype Password" value="" name="confirm_password" required="" /><span class="err_msg">confirm password Field is mandatory</span></div><div class="clearfix"></div><div class="row_submit"><div class="col-xs-12 nopad"><div class="agree_terms"><div class="squaredThree"><input type="checkbox" id="register_tc" class="airlinecheckbox validate_user_register" name="tc" required=""><label for="register_tc" class="register_tc"></label></div><label class="lbllbl" for="tc">By signing up you accept our <a target="_balnk" href="../../../../../terms-conditions.html">terms of use and privacy policy</a></label></div></div><div class="col-xs-12 nopad"><button type="submit" id="register_user_button" class="submitlogin">Register</button></div></div><div class="loading hide" id="loading"><img src="../../template_v3/images/loader_v3.gif"></div><div class="rowput alert alert-success hide" id="register-status-wrapper"></div><div class="rowput alert alert-danger hide" id="register-error-msg"></div><div class="clearfix"></div><!-- <div class="text_info">(You will receive an e-mail containing the account verification link.)</div> --></form><a class="open_sign_in">I already have an Account</a> </div></div></div><div class="actual_forgot for_forgot"><div class="slpophd_new">Forgot Password?</div><div class="othesend_regstr"><div class="rowput"><span class="fa fa-envelope"></span><input type="text" name="forgot_pwd_email" id="recover_email" class="logpadding form-control" placeholder="Enter Email-Id" /><span>This Field is mandatory</span></div><!--<div class="rowput"><span class="fa fa-mobile"></span><input type="text" name="forgot_pwd_phone" id="recover_phone"	class="logpadding form-control" placeholder="Registered Mobile Number " /><span>This Field is mandatory</span></div>--> <div class="clearfix"></div><div id="recover-title-wrapper" class="alert alert-success"
+					style="display: none"><p> <i class="fa fa-warning"></i> <span id="recover-title"></span> </p></div><div class="clearfix"></div><button class="submitlogin" id="reset-password-trigger">Send Email</button><div class="clearfix"></div><a class="open_sign_in">I am an Existing User</a></div></div></div></div><!-- New Forgot Password Modal --><div id="forgotpaswrdpop" class="altpopup"><div class="comn_close_pop fa fa-times closepopup"></div><div class="insideforgot"><div class="slpophd">Forgot Password?</div><div class="othesend"><div class="rowput"><span class="fa fa-envelope"></span><input type="text" name="forgot_pwd_email" id="recover_email_book" class="logpadding form-control" placeholder="Enter Email" required="required" /><span>This Field is mandatory</span></div><div class="rowput"><span class="fa fa-mobile"></span><input type="text" name="forgot_pwd_phone" id="recover_phone_book"	class="logpadding form-control" placeholder="Enter Mobile Number" required="required" /><span>This Field is mandatory</span></div><div class="clearfix"></div><div id="recover-title-wrapper-book" class="alert alert-success"
+				style="display: none"><p> <i class="fa fa-warning"></i> <span id="recover-title-book"></span> </p></div><div class="centerdprcd"><button class="bookcont" id="reset-password-trigger-book">Send Mail</button></div></div></div></div><style>#register_user_form .err_msg.invalid-ip{
+		color: #bf7070;
+    	display: block;
+    	border: 0 !important;
+	}
+	#register_user_form .err_msg{
+		display: none;
+	}</style>                    </div>                </div>            </div>        </div>        <!-- Timer -->        <!--  <div class="cartsec1">                 <span class="postime"><span id="display">00:00</span></span>         </div> -->        <!-- Timer -->        <div class="allpagewrp">            <!-- Header Start -->            <header>                <div class="section_top">                    <div class="container">                        <div class="topalstn">                            <div class="socila ">                                <!--<ul class="social-icons bordrth">                                    <li>                                        <a href="#"><i class="fab fab fa-facebook"></i></a>                                    </li>                                    <li>                                        <a href="#"><i class="fab fab fa-twitter"></i></a>                                    </li>                                    <li>                                        <a href="#"><i class="fab fab fa-instagram"></i></a>                                    </li>                                    <li>                                        <a href="#"><i class="fab fab fa-linkedin"></i></a>                                    </li>                                </ul>-->                                <ul class="social-icons bordrth">                                                                    <li>                                    
+                                    <a href="https://www.facebook.com/swt.travel"><i class="fab fab fa-facebook"></i></a>                                   </li>                                                                       <li>                                    
+                                    <a href="https://twitter.com/"><i class="fab fab fa-twitter"></i></a>                                   </li>                                                                       <li>                                    
+                                    <a href="https://www.youtube.com/"><i class="fab fab fa-youtube"></i></a>                                   </li>                                                                       <li>                                    
+                                    <a href="https://in.linkedin.com/"><i class="fab fab fa-linkedin"></i></a>                                   </li>                                                                   </ul>                                 
+                            </div>                            <div class="toprit">                                <div class="sectns bordrth">                                    <a class="phnumr" href="tel:+123456789">                                      <!--   <span class="sprte indnum samestl"></span> -->                                        <span class="numhide">+123456789</span>                                        <div class="fa cliktocl fa-phone"></div>                                    </a>                                </div>                                <div class="sectns bordrth">                                    <a class="mailadrs" href="mailto:online@swt.travel">                                        online@swt.travel                                       <!--  <span class="fa fa-paper-plane"></span> -->                                        <!-- online@swt.travel -->                                    </a>                                </div>                                
+                                <div class="sectns bordrth">                                                                        <a class="mailadrs" target="blank" href="https://api.whatsapp.com/send?phone=27739255550&amp;text=Hi">                                        <i class="fab fab fa-whatsapp"></i>                                        For Instant Message
+                                    </a>    
+                                    
+                                </div>                            </div>                            
+                            <div class="ritsude">                                <div class="sidebtn">                                                                            <a class="topa logindown" data-toggle="modal" data-target="#show_log" id="test">                                            <div class="reglog">                                                <!-- <div class="userimage">                                                                                                        <img src="/extras/system/template_list/template_v3/images/user.png" alt="" />                                                </div> -->                                                <div class="userorlogin">Login</div>                                            </div>                                        </a>                                    
+                                </div>                                <!--<div class="sidebtn">                                    <a class="topa logindown" data-toggle="modal" data-target="#show_log">                                            <div class="reglog">                                                <div class="userorlogin">Sign Up</div>                                            </div>                                        </a>                                    
+                                </div>-->                                <div class="sidebtn language">                                    <!--<select class="selectpicker" data-width="fit">                                        <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>                                      <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>                                    </select>-->                                </div>                                <div class="sidebtn flagss">                                    <a class="topa dropdown-toggle" data-toggle="dropdown">                                        <div class="reglognorml">                                            <div class="flag_images">                                                <span id="disply_curr" class="disply_curr curncy_img sprte zar"></span>                                            </div>                                            <div class="flags">                                                ZAR                                            </div>                                          <i class="fal fa-angle-down cartt"></i>                                        </div>                                    </a>                                    <ul class="dropdown-menu exploreul explorecntry logdowndiv">                                        <li class="currency_li "><a href="../../../../../index.php/utilities/set_preferred_currency/INR.json" class="app-preferred-currency" data-currency="INR"><span class="curncy_img sprte inr"></span><span class="name_currency"> INR</span><span class="side_curency">Rs</span></a></li><li class="currency_li "><a href="../../../../../index.php/utilities/set_preferred_currency/KWD.json" class="app-preferred-currency" data-currency="KWD"><span class="curncy_img sprte kwd"></span><span class="name_currency"> KWD</span><span class="side_curency">د.ك</span></a></li><li class="currency_li "><a href="../../../../../index.php/utilities/set_preferred_currency/NGN.json" class="app-preferred-currency" data-currency="NGN"><span class="curncy_img sprte ngn"></span><span class="name_currency"> NGN</span><span class="side_curency">₦</span></a></li><li class="currency_li "><a href="../../../../../index.php/utilities/set_preferred_currency/SAR.json" class="app-preferred-currency" data-currency="SAR"><span class="curncy_img sprte sar"></span><span class="name_currency"> SAR</span><span class="side_curency">SAR</span></a></li><li class="currency_li "><a href="../../../../../index.php/utilities/set_preferred_currency/USD.json" class="app-preferred-currency" data-currency="USD"><span class="curncy_img sprte usd"></span><span class="name_currency"> USD</span><span class="side_curency">$</span></a></li><li class="currency_li active"><a href="../../../../../index.php/utilities/set_preferred_currency/ZAR.json" class="app-preferred-currency" data-currency="ZAR"><span class="curncy_img sprte zar"></span><span class="name_currency"> ZAR</span><span class="side_curency">R</span></a></li><script>$(document).ready(function($){$('.app-preferred-currency').on('click',function(e){e.preventDefault();var _update_currency_url=$(this).attr('href');$.get(_update_currency_url,function(response){if(response.status==true){$('.wrapper').css('opacity','.1');location.reload()}})})});</script>                                    </ul>                                </div>                            </div>                            
+                        </div>                    </div>                </div>                <div class="clearfix"></div>                <div class="topssec">                    <div class="container">                        <div class="bars_menu fa fa-bars menu_brgr"></div>                        <a class="logo" href="../../../../../index.html">                            <img class="tab_logo" src="../../template_v3/images/SWTtravels_Logo.png"  alt="" />                            <!-- <img class="tab_logo" src="/extras/custom/TMX1512291534825461/images/mobile_logo.png" alt="Logo" />  -->                           <!--  <img class="ful_logo" src="/extras/custom/TMX1512291534825461/images/TMX1512291534825461logo_small_(1).png"	alt="" /> -->                           <img class="ful_logo" src="../../template_v3/images/SWTtravels_Logo.png"  alt="" />                           
+                        </a>                        <div class="menuandall">                            <div class="sepmenus">                                <ul class="exploreall">                                                                                <li
+                                                class=""><a
+                                                    href="../../../../../index.php/general/index/flights87d5.html?default_view=VHCID1420613784">                                                    <span
+                                                        class="sprte cmnexplor "></span>                                                    <strong>Flights</strong>                                                </a>                                            </li>                                                                                        <li
+                                                class=""><a
+                                                    href="../../../../../index.php/general/index/hotelsd498.html?default_view=VHCID1420613748">                                                    <span
+                                                        class="sprte cmnexplor "></span>                                                    <strong>Hotels</strong>                                                </a>                                            </li>                                                                                        <li
+                                                class=""><a
+                                                    href="../../../../../index.php/general/index/insuranced46b.html?default_view=VHCID1433498307">                                                    <span
+                                                        class="sprte cmnexplor "></span>                                                    <strong>Insurance</strong>                                                </a>                                            </li>                                                                                        <li
+                                                class=""><a
+                                                    href="../../../../../index.php/general/index/carb676.html?default_view=TMCAR1433491849">                                                    <span
+                                                        class="sprte cmnexplor "></span>                                                    <strong>Car</strong>                                                </a>                                            </li>                                                                                        <li
+                                                class=""><a
+                                                    href="../../../../../index.php/general/index/holidays2c01.html?default_view=VHCID1433498322">                                                    <span
+                                                        class="sprte cmnexplor "></span>                                                    <strong>Holidays</strong>                                                </a>                                            </li>                                                                            </ul>                            </div>                            
+                        </div>                        <!-- <div class="partner_butn">                            <button type="btn" class="btn btn-primary">Become a Partner</button>                        </div> -->                    </div>                </div>            </header>            <!-- Header End -->            <div class="clearfix"></div>            <!-- UTILITY NAV For Application MESSAGES START -->            <div class="container-fluid utility-nav clearfix">                <!-- ROW -->  <!-- /ROW -->            </div>            <!-- UTILITY NAV For Application MESSAGES END -->            <!-- Body Printed Here -->            <div class="fromtopmargin">                <style>   .a-server {
+      width: 60%;
+      margin: 1em auto;
+      text-align: center;
+      border: .5em solid gray;
+      padding: 1em;
+   }
+   .a-server .p-err-sorry {
+      color: gray;
+   }
+   .a-server .p-err {
+      color: indianred;
+   }
+   .a-server .center-responsive {
+      width: 30%;
+      margin: 1em auto;
+   }
+   .a-server nav {
+      margin: 1em auto;
+   }
+   .a-server ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+   }
+   .a-server ul li {
+      display: inline;
+   }
+   .a-server .btn-as {
+      padding: 1em 3em;
+      margin: 1em .3em;
+      color: white;
+      border: 0;
+      outline: 0;
+   }
+   .btn-lime {
+      background: #98c000;
+   }
+   .btn-red {
+      background: #ea2e49;
+   }
+   .btn-gray {
+      background: #3d4c53;
+   }
+   .btn-cyan {
+      background: #0cdbe8;
+   }</style><div class="a-server">   <img src="../../template_v3/images/404.jpg" alt="sorry" class="center-responsive">   <p class="p-err-sorry">Ooooooops!!!!!!!!!
+      </p>         <p class="p-err">Seems like the url which you are trying to access is not found on our system !!!</p>         <nav>            <ul>               <li>                  <a href='../../../../../index.php/general/index.html'><span><button class="btn-as btn-lime">Find Dashboard</button></span></a>               </li>               <li>                  <a href='../../../../../index.php/general/index.html'><span><button class="btn-as btn-red">Find Dashboard</button></span></a>               </li>               <li>                  <a href='../../../../../index.php/general/index.html'><span><button class="btn-as btn-gray">Find Dashboard</button></span></a>               </li>               <li>                  <a href='../../../../../index.php/general/index.html'><span><button class="btn-as btn-cyan">Find Dashboard</button></span></a>               </li>            </ul>         </nav></div>            </div>            <div class="clearfix"></div>            
+            <!-- Footer Start -->            <footer>                <div class="fstfooter">                    <div class=""> 
+                        <div class="reftr">                        <div class="container">                       
+                                <div class="clearfix"></div>                            <div class="col-xs-12 col-sm-6 nopad fulnine">                                <div class="frtbest nopad">                                   <ul id="accordionfot" class="accordionftr">                                    <h4 class="ftrhd arimo ">Need any help?</h4>                                    <span class="ftr_blue"></span>                                    
+                                    <ul class="submenuftr sideline">                                        <li class="leftline">                                            <h5>Call 24/7 for any help</h5>                                            <p class="blubig">+123456789</p>                                        </li>                                        <li class="leftline">                                            <h5>Mail to our support team</h5>                                            <p class="blubig">online@swt.travel</p> 
+                                        </li>                                        <li class="leftline">                                            <h5>Follow us on</h5>                                           <ul class="social-icons bordrth">                                                                                   <li>                                    
+                                    <a href="https://www.facebook.com/swt.travel"><i class="fab fab fa-facebook"></i></a>                                   </li>                                                                       <li>                                    
+                                    <a href="https://twitter.com/"><i class="fab fab fa-twitter"></i></a>                                   </li>                                                                       <li>                                    
+                                    <a href="https://www.youtube.com/"><i class="fab fab fa-youtube"></i></a>                                   </li>                                                                       <li>                                    
+                                    <a href="https://in.linkedin.com/"><i class="fab fab fa-linkedin"></i></a>                                   </li>                                                                                   <!--<li>                                                    <a href="#"><i class="fab fab fa-facebook"></i></a>                                                </li>                                                <li>                                                    <a href="#"><i class="fab fab fab fa-google-plus"></i></a>                                                </li>                                                <li>                                                    <a href="#"><i class="fab fab fa-twitter"></i></a>                                                </li>                                                
+                                                <li>                                                    <a href="#"><i class="fab fab fa-youtube"></i></a>                                                </li>-->                                           </ul>                                        </li>                                    </ul>                                </ul>                                </div> 
+
+                            </div>                            
+
+                            <div class="col-xs-6 fulnine">                                <div class="col-xs-6 nopad">                                    <div class="frtbest">                                        <ul id="accordionfot" class="accordionftr">                                            <h4 class="ftrhd arimo ">Company</h4>                                            <span class="ftr_blue"></span>                                             <ul class="submenuftr">                                                <!--<li class="frteli"><a href="https://www.swt.travel/index.php/aboutus">About us</a></li>-->                                                <!--<li class="frteli"><a href="">Testimonials</a></li>                                                <li class="frteli"><a href="">Rewards</a></li>                                                <li class="frteli"><a href="">Work with us</a></li>                                                <li class="frteli"><a href="">Meet the team</a></li>                                                <li class="frteli"><a href="">Blog</a></li>-->                                                 <li class="frteli"><a href="../../../../../about-us.html">About Us <br> </a></li><li class="frteli"><a href="../../../../../terms-and-conditions.html">Terms and Conditions <br> </a></li><li class="frteli"><a href="../../../../../privacy-policy.html">Privacy Policy <br> </a></li><li class="frteli"><a href="../../../../../faq.html">FAQ <br> </a></li><li class="frteli"><a href="../../../../../become-an-affiliate.html">Become an Affiliate <br> </a></li><li class="frteli"><a href="../../../../../branches.html">Branches <br> </a></li>                                            </ul> 
+
+
+                                        </ul>                                    </div>                                </div>                                <div class="col-xs-6 nopad">                                    <div class="frtbest">                                        <ul id="accordionfot" class="accordionftr">                                            <h4 class="ftrhd arimo ">Support</h4>                                            <span class="ftr_blue"></span>                                            <ul class="submenuftr1">                                                <li class="frteli"><a href="../../../../../index.php/contact.html">Contact Us</a></li>                                                <!--<li class="frteli"><a href="https://www.swt.travel/index.php/account">Account</a></li>                                                <li class="frteli"><a href="https://www.swt.travel/index.php/faq">Faq</a></li>                                                <li class="frteli"><a href="https://www.swt.travel/index.php/legal">Legal</a></li>                                                <li class="frteli"><a href="https://www.swt.travel/index.php/privacy_policy">Privacy Policy</a></li>-->                                            </ul>                                        </ul>                                    </div>                                </div>                            <!--     <div class="col-xs-3 col-sm-3 nopad">                                    <div class="frtbest">                                        <ul id="accordionfot1" class="accordionftr">                                            <h4 class="ftrhd arimo ">Other Services</h4>                                            <span class="ftr_blue"></span>                                            <ul class="submenuftr1">                                                <li class="frteli"><a href="">Community Program</a></li>                                                <li class="frteli"><a href="">Investors relation</a></li>                                                <li class="frteli"><a href="">Rewards Program</a></li>                                                <li class="frteli"><a href="">Points Plus</a></li> 
+                                                <li class="frteli"><a href="">Partners</a></li>                                               <li class="frteli"><a href="">List my Hotels</a></li> 
+                                                                                                       <li class="frteli"><a href="https://www.swt.travel/general/index/flights?default_view=VHCID1420613784">Flights</a>                                                        </li>                                                                                                                <li class="frteli"><a href="https://www.swt.travel/general/index/hotels?default_view=VHCID1420613748">Hotels</a>                                                        </li>                                                                                                                <li class="frteli"><a href="https://www.swt.travel/general/index/insurance?default_view=VHCID1433498307">Insurance</a>                                                        </li>                                                                                                                <li class="frteli"><a href="https://www.swt.travel/general/index/car?default_view=TMCAR1433491849">Car</a>                                                        </li>                                                                                                                <li class="frteli"><a href="https://www.swt.travel/general/index/holidays?default_view=VHCID1433498322">Holidays</a>                                                        </li>                                                                                                        <li class="frteli"><a href="https://www.swt.travel//index.php/report/print_voucher">Print Voucher</a></li>                                            </ul>                                        </ul>                                    </div>                                </div> -->                                <!--<div class="col-xs-3 nopad">                                    <div class="frtbest">                                        <ul id="accordionfot2" class="accordionftr">                                            <h4 class="ftrhd arimo ">Top Cities</h4>                                            <span class="ftr_blue"></span>                                            <ul class="submenuftr1">                                                <li class="frteli"><a href="">Chicago</a></li>                                                <li class="frteli"><a href="">Newyork</a></li>                                                <li class="frteli"><a href="">San Franscisco</a></li>                                                <li class="frteli"><a href="">California</a></li>                                                <li class="frteli"><a href="">Ohio</a></li>                                                <li class="frteli"><a href="">Alaska</a></li>                                                 <li class="frteli"><a href="https://www.swt.travel/become-an-affiliate">Become an Affiliate <br> </a></li><li class="frteli"><a href="https://www.swt.travel/branches">Branches <br> </a></li> 
+                                            </ul>                                        </ul>                                    </div>                                </div>-->                            </div>                            </div>                            <div class="footer-top__back-to-top">                                <a class="footer-top__back-to-top-link  js-back-to-top" href="#"> 
+                                    <i class="fal fa-angle-up" aria-hidden="true"></i>                                </a>                            </div>                        </div>                    </div>                    <!-- <button type="button" class="btn btn-warning btn-xs pull-right col-md-3" data-toggle="modal" data-target="#myModal">Offline Payment</button> -->                </div>                <div class="clearfix"></div>                <div id="myModal" class="modal fade" role="dialog">                    <div class="modal-dialog">                        <!-- Modal content-->                        <form action="https://www.swt.travel//index.php/general/offline_payment" method="post" name="offline" id="offline_form">                            <div class="modal-content">                                <div class="modal-header">                                    <button type="button" class="close" data-dismiss="modal">&times;</button>                                    <h4 class="modal-title">Offline Payment</h4>                                </div>                                <center><span class="text-success offline-msg"></span></center>                                <div class="modal-body">                                    <div class="form-group">                                        <label for="usr">Company Name:</label>                                        <input type="text" class="form-control" id="company_name" name="company_name">                                    </div>                                    <div class="form-group">                                        <label for="usr">Customer Name:</label>                                        <input type="text" class="form-control" id="name" name="name">                                    </div>                                    <div class="form-group">                                        <label for="usr">Customer Email:</label>                                        <input type="text" class="form-control" id="customer_email" name="email">                                    </div>                                    <div class="form-group">                                        <label for="usr">Customer Contact No:</label>                                        <input type="text" class="form-control" id="phone" name="phone">                                    </div>                                    <div class="form-group">                                        <label for="usr">Amount:</label>                                        <input type="text" class="form-control" id="amount" name="amount">                                    </div>                                    <div class="form-group">                                        <label for="usr">Remarks:</label>                                        <textarea class="form-control" rows="5" id="remarks" name="remarks"></textarea>                                    </div>                                </div>                                <div class="modal-footer">                                    <button type="button" class="btn btn-success btn-offline-pay" >Submit</button>                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                </div>                            </div>                        </form> 
+                    </div>                </div>                <div class="btmfooternw">                    <div class="container">                        <div class="copyrit">                           Copyright &copy; 2024<a target="_balnk" href="../../../../../index.html"> swt.travel</a> All rights reserved.
+                     </div>                     <div class="middle_images">                        <ul>                            <li>                                <img src="../../template_v3/images/asata.png">                            </li>                            <li>                                <img src="../../template_v3/images/Iata.png">                            </li>                            <li>                                <img src="../../template_v3/images/mastercard_secured.png">                            </li>                            <li>                                <img src="../../template_v3/images/visa1.png">                            </li>                            <li>                                <img src="../../template_v3/images/paygate.png">                            </li>                            <li>                                <img src="../../template_v3/images/pci-dss.png">                            </li>                            <li>                                <img src="../../template_v3/images/visa.png">                            </li>                            <li>                                <img src="../../template_v3/images/matercard.png">                            </li>                        </ul>                         
+                     </div>                        <div class="acceptimg">                            <img class="img-responsive"
+                                 src="../../template_v3/images/payment.png"
+                                 alt="" />                        </div>                         <ul class="signupfm hide">                                                
+                                    <a href="https://www.facebook.com/swt.travel" target="_balnk"><i class="faftrsoc fab fa-facebook-f"></i></a>                                   
+                                    <a href="https://twitter.com/" target="_balnk"><i class="faftrsoc fab fa-twitter"></i></a>                                   
+                                    <a href="https://www.youtube.com/" target="_balnk"><i class="faftrsoc fab fab fa-youtube"></i></a>                                   
+                                    <a href="https://in.linkedin.com/" target="_balnk"><i class="fab fab fa-linkedin"></i></a>                                                              </ul>                        
+                    </div>                </div>                <!-- <div class="copyrit">                           Copyright &copy; 2024<a target="_balnk" href="http://swt.travel/">  SWT TRAVEL</a> All rights reserved.
+                </div> -->            </footer>            <!-- Footer End -->        </div>        <!--<script defer type="text/javascript" src="?php echo JQUERY_UI_LIBRARY_DIR; ?>jquery-ui.min.js"></script>--><!-- Libraries Needed For Social Network Login Only --><script src="../../../../../../unpkg.com/jwt-decode%404.0.0/build/jwt-decode.js"></script><script src="https://accounts.google.com/gsi/client?onload=onLoad" async defer></script><div id="g_id_onload"
+         data-client_id="788426796951-5aj7h71gvqgeqq7k5lt8oteeqk10e8v6.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">    </div><script>function onLoad() {
+     gapi.load('auth2', function() {
+          google.accounts.id.disableAutoSelect();
+          gapi.auth2.init();
+     });
+}</script><script>    function handleCredentialResponse(response) {
+     const responsePayload = jwt_decode(response.credential);
+     var n = {};
+     n.first_name = responsePayload.given_name, n.last_name = responsePayload.family_name, n.email = responsePayload.email, n.id = responsePayload.sub, $.post(app_base_url + "index.php/auth/social_network_login_auth/google", n, function(o) {
+            1 == o.status ? ($("body").css("opacity", ".1"), $(".my_account_dropdown").hide(), location.reload()) : ($("body").css("opacity", "1"), location.reload())
+        })
+     }</script><!-- DATE AND TIME PICKER  --><!--<script defer src="?php echo DATEPICKER_LIBRARY_DIR;?>jquery.datetimepicker.js" async defer ></script><link defer rel="stylesheet" type="text/css" href="?php echo DATEPICKER_LIBRARY_DIR;?>jquery.datetimepicker.css" />--><!-- DATE AND TIME PICKER TO WINDOW START --><script>$(document).ready(function() {
+	});</script><script src="../../../library/javascript/jquery-ui.min.js" defer></script><script src="../../../library/datetimepicker/jquery.datetimepicker.js" defer></script><!-- Load only when needed --><script>//$.widget.bridge('uibutton', $.ui.button);
+//$.widget.bridge('uitooltip', $.ui.tooltip);
+var project_cookie_path = "../../../../../index.html";</script><script src="../../template_v3/javascript/general.js" defer></script><script  src="../../../library/bootstrap/js/bootstrap.min.js" defer="defer" charset="UTF-8"></script><script  src="../../../library/javascript/app.js" defer="defer" charset="UTF-8"></script><script  src="../../template_v3/javascript/javascript.js" defer="defer" charset="UTF-8"></script><script  src="../../template_v3/javascript/page_resource/login.js" defer="defer" charset="UTF-8"></script><script  src="../javascript/page_resource/datepicker.js" defer="defer" charset="UTF-8"></script><script  src="../javascript/page_resource/page_loader_common.js" defer="defer" charset="UTF-8"></script>        <script	src="../../template_v3/javascript/modernizr.custom.js" defer></script>  <script type="text/javascript">          $(document).ready(function(){
+            $("#id").attr("content", "width=device-width, initial-scale=1")
+        })
+                                                var accessToken = "8484e898405d4becb83c0091285f68a2";
+                                                var baseUrl = "https://api.api.ai/v1/";
+
+                                                $(document).ready(function () {
+                                                    $("#from_city").keypress(function (event) {
+                                                        if (event.which == 13) {
+                                                            event.preventDefault();
+                                                            send();
+                                                        }
+                                                    });
+                                                    $("#rec").click(function (event) {
+                                                        switchRecognition();
+                                                        // setInput();
+                                                    });
+                                                });
+
+                                                var recognition;
+
+                                                function startRecognition() {
+                                                    recognition = new webkitSpeechRecognition();
+                                                    recognition.onstart = function (event) {
+                                                        updateRec();
+                                                    };
+                                                    recognition.onresult = function (event) {
+                                                        var text = "";
+                                                        for (var i = event.resultIndex; i < event.results.length; ++i) {
+                                                            text += event.results[i][0].transcript;
+                                                        }
+                                                        setInput(text);
+                                                        stopRecognition();
+                                                    };
+                                                    recognition.onend = function () {
+                                                        stopRecognition();
+                                                    };
+                                                    recognition.lang = "en-US";
+                                                    recognition.start();
+                                                }
+
+                                                function stopRecognition() {
+                                                    if (recognition) {
+                                                        recognition.stop();
+                                                        recognition = null;
+                                                    }
+                                                    updateRec();
+                                                }
+
+                                                function switchRecognition() {
+                                                    if (recognition) {
+                                                        stopRecognition();
+                                                    } else {
+                                                        startRecognition();
+                                                    }
+                                                }
+
+                                                function setInput(text) {
+                                                    
+
+                                                    $("#input_speech").val(text);
+                                                    
+                                                    
+                                                    var from_city = text.split(" to");
+                                                    if (typeof (from_city[1]) != 'undefined' && from_city[1].indexOf(' on') >= -1) {
+                                                        var to_city = from_city[1].split(" on");
+                                                    } else {
+                                                        var to_city = [from_city[1], ''];
+                                                    }
+                                                    //alert(to_city);
+                                                    if (typeof (to_city[1]) != 'undefined' && to_city[1].indexOf(' for') != -1) {
+                                                        var ddate = to_city[1].split(" for");
+                                                    } else {
+                                                        //console.log(to_city);
+                                                        if (typeof (to_city[1]) != 'undefined') {
+                                                            var removed_space_date = to_city[1].trim();
+
+                                                            var new_date = removed_space_date.split(" ");
+
+                                                            var ddate = [new_date[1] + ' ' + new_date[0]];
+
+                                                        } else {
+                                                            var d = new Date();
+                                                            var strDate = (d.getDate() + 1) + "-" + (d.getMonth() + 1);
+
+                                                            var ddate = [strDate, ''];
+                                                        }
+
+                                                    }
+
+
+                                                    if (typeof (ddate[1]) != 'undefined' && ddate[1].indexOf(' adult') != -1) {
+                                                        var adult_value = ddate[1].split("adult");
+                                                    } else {
+                                                        var adult_value = ["1"];
+                                                    }
+
+
+                                                    if (typeof (adult_value[1]) != 'undefined' && adult_value[1].indexOf(' child') != -1) {
+                                                        var child_value = adult_value[1].split(" child");
+                                                    } else {
+                                                        var child_value = ["0"];
+                                                    }
+
+
+                                                    if (typeof (child_value[1]) != 'undefined' && child_value[1].indexOf(' infant') != -1) {
+                                                        var infant_value = child_value[1].split(" infant");
+                                                    } else {
+                                                        var infant_value = ["0"];
+                                                    }
+                                                    if ($.trim(to_city[0]) != '' && $.trim(from_city[0]) != '') {
+                                                        var from_city_value = update_city($.trim(from_city[0]), 'from', 'from_loc_id_val');
+                                                        var to_city_value = update_city($.trim(to_city[0]), 'to', 'to_loc_id_val');
+
+                                                        $("#flight_datepicker1").val(ddate[0] + "-2018");
+                                                        $("#OWT_adult").val(adult_value[0]);
+                                                        $("#OWT_child").val(child_value[0]);
+                                                        $("#OWT_infant").val(infant_value[0]);
+
+                                                        
+                                                        setTimeout(function () {
+                                                            $("#flight-form-submit").click();
+                                                        }, 5000);
+                                                    } else {
+                                                        alert("Please Try agin with proper input data");
+                                                    }
+                                                }
+
+                                                function updateRec() {
+                                                    $("#rec").html(recognition ? "<img style='width: 14px; padding-top: 2px;' src='/extras/system/template_list/template_v3/images/mike_red.png'>" : "<img style='width: 14px; padding-top: 2px;' src='/extras/system/template_list/template_v3/images/mike.png'>");
+                                                }
+
+                                                function update_city(input_data, id, val) {
+                                                    var search_data = input_data.replace(" ", "_");
+
+                                                    $.ajax({
+                                                        type: "POST",
+                                                        url: 'https://localhost/travelomatix/index.php/ajax/get_airport_code_list_for_voice_speach/' + search_data,
+                                                        success: function (data) {
+                                                            var data_arrange = data.split("|");
+
+                                                            $("#" + id).val($.trim(data_arrange[0]));
+                                                            $("#" + val).val($.trim(data_arrange[1]));
+                                                        },
+                                                    });
+                                                }
+
+                                                function send() {
+                                                    var text = $("#input").val();
+                                                    $.ajax({
+                                                        type: "POST",
+                                                        url: baseUrl + "query?v=20150910",
+                                                        contentType: "application/json; charset=utf-8",
+                                                        dataType: "json",
+                                                        headers: {
+                                                            "Authorization": "Bearer " + accessToken
+                                                        },
+                                                        data: JSON.stringify({query: text, lang: "en", sessionId: "somerandomthing"}),
+
+                                                        success: function (data) {
+                                                            setResponse(JSON.stringify(data, undefined, 2));
+                                                        },
+                                                        error: function () {
+                                                            setResponse("Internal Server Error");
+                                                        }
+                                                    });
+                                                    setResponse("Loading...");
+                                                }
+
+                                                function setResponse(val) {
+                                                    $("#response").text(val);
+                                                }
+
+        document.getElementById('test').onclick = function() {
+           //$("#login-status-wrapper").text("").hide();
+           //$("#recover-title").text("").hide();
+           //$("#recover-title").hide();
+        };
+
+        </script>    </body>
+<!-- Mirrored from www.swt.travel/extras/system/template_list/template_v1/images/arrow.png by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 04:13:07 GMT -->
+</html>
